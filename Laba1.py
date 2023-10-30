@@ -1,21 +1,23 @@
 class Worker:
     def __init__(self, name, surname, age):
-        return
+        self.__name = name
+        self.__surname = surname
+        self.__age = age
 
     @property
     def name(self):
-        return
+        return self.__name
 
     @property
     def surname(self):
-        return
+        return self.__surname
 
     @property
     def age(self):
-        return
+        return self.__age
 
     def __str__(self):
-        return
+        return f"{self.name} {self.surname}, Возраст: {self.age}"
 
 
 class Boss:
